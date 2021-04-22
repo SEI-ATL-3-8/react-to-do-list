@@ -6,7 +6,7 @@ const TodoPanel = (props) => {
         {props.notes.map((note, i) => {
             return(
                 <ListItem 
-                i = {i}
+                key = {i}
                 note = {note}/>
             )
         })}

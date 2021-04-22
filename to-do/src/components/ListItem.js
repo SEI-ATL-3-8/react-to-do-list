@@ -1,7 +1,11 @@
+import Done from "./DoneButton"
+
+
 const ListItem = (props) => {
     return(
-        <div key= {props.i} className="each-note">
+        <div className="each-note">
             {props.note}
+            <Done />
         </div>
     )
 }
