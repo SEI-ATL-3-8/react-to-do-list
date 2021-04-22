@@ -23,6 +23,10 @@
   
 }
 
+.green {
+  background-color: green;
+}
+
 input {
   margin: 10px;
   width: 250px;
