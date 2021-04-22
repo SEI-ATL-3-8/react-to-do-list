@@ -3,7 +3,7 @@ import FormInput from './FormInput'
 
 const FormArea = (props) => {
     const header = 'Create New Task'
-
+    
     return (
         <div className="area">
             <Headers header={header} />

@@ -2,7 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
+.mainTitle {
+  margin-bottom: 1px;
+}
+
+.mainSubHeader {
+  margin-top: 0px;
 }
 
 .container {
@@ -10,11 +17,10 @@
   flex-direction: row;
   justify-content: center;
   width: 1200px;
-
 }
 
 .area {
-  border: 1px solid black;
+  border: 1px solid rgb(50, 50, 50);
   border-radius: 10px;
   width: 350px;
   display: flex;
@@ -40,11 +46,14 @@
 .input-text {
   width: 250px;
   margin: 10px 10px;
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 5px;
+  height: 22px;
 }
 
 .task-container {
   width: 250px;
-  border: 1px solid rgb(50, 135, 200);
+  border: 2px dotted rgb(19, 120, 182);
   border-radius: 10px;
   display: flex;
   flex-direction: row;
@@ -60,9 +69,8 @@
 
 .task-container-done {
   width: 250px;
-  border: 1px solid rgb(50, 135, 200);
+  border: 2px solid rgb(19, 120, 182);
   border-radius: 10px;
-  background-color: rgb(50, 135, 200);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -73,7 +81,31 @@
 
 .task-entry-done {
   font-size: 0.9em;
+  text-decoration: line-through;
+}
+
+.task-container:hover, .task-container-done:hover {
+  transform: scale(1.02, 1.02);
+}
+
+.button, .btn-clear {
+  color: black;
+  border: 2px solid rgb(180, 180, 180);
+  border-radius: 5px;
+  height: 25px;
+}
+
+.button:hover, .btn-clear:hover {
+  cursor: pointer;
+  background-color: rgb(19, 120, 182);
+  border: 2px solid rgb(19, 120, 182);
+  border-radius: 5px;
   color: white;
+  font-weight: bold;
+}
+
+.btn-clear {
+  margin-bottom: 10px;
 }
 
 

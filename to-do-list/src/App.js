@@ -7,10 +7,9 @@ import Headers from './components/Headers'
 
 
 function App() {
-  const header = 'Task App'
-
+  const header = 'Tasks App'
+  const subHeader = 'Powered By React'
   const [taskArray, setTaskArray] = useState([])
-
   const [doneArray, setDoneArray] = useState([])
 
   const addToTaskArray = (item) => {
@@ -28,11 +27,11 @@ function App() {
 
   return (
     <div className="App">
-        <Headers header={header}/>
+        <Headers header={header} subHeader={subHeader} />
       <main className="container">
         <FormArea addToTaskArray={addToTaskArray} />
-        <ToDoArea taskArray={taskArray} resolveDoneTask={resolveDoneTask} />
-        <DoneArea doneArray={doneArray} />
+        <ToDoArea taskArray={taskArray} resolveDoneTask={resolveDoneTask} setTaskArray={setTaskArray} />
+        <DoneArea doneArray={doneArray} setDoneArray={setDoneArray} />
       </main>
     </div>
   );

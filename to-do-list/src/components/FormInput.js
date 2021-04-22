@@ -4,12 +4,15 @@ import Buttons from './Buttons'
 const FormInput = (props) => {
     
     const [task, setTask] = useState('')
-
     const button = 'Submit'
 
     const handleSubmit = (e) => {
-        e.preventDefault()
-        props.addToTaskArray(task)
+        if ( task !== '' ) {
+            e.preventDefault()
+            props.addToTaskArray(task)
+        } else {
+            alert('Please create a new task!')
+        }
     }
 
     const newTask = (e) => {
@@ -21,7 +24,6 @@ const FormInput = (props) => {
             <input className="input-text" type="text" value={task} placeholder="New task..." onChange={newTask} />
             <Buttons button={button} />
         </form>
-
     )
 }
 
