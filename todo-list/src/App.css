@@ -1,0 +1,57 @@
+
+.App {
+  text-align: center;
+  height: 100vh;
+}
+
+.container {
+  border: 5px dotted #fffafa;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+
+.undoneTask {
+  border: 5px solid #fffafa;
+  background-color: #d2691e;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px;
+  height: 25%;
+  width: 25%;
+  margin: 15px;
+}
+
+.leftHeader {
+  color: #ffdead;
+  text-shadow: 0 0 2px,
+  0 0 4px;
+}
+
+.completeTask {
+  border: 5px solid #fffafa;
+  background-color: #d2691e;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px;
+  height: fit-content;
+  width: 25%;
+  margin: 15px;
+}
+
+.taskList {
+  list-style-type: none;
+}
+
+li {
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffdead;
+  text-shadow: 0 0 2px,
+  0 0 4px;
+}
+
+.strike {
+  text-decoration: line-through;
+}
