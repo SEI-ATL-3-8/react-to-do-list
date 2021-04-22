@@ -1,0 +1,30 @@
+
+.App {
+  text-align: center;
+  height: 100vh;
+}
+
+.container {
+  border: 1px solid #fffafa;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+
+.undoneTask {
+  border: 1px solid #fffafa;
+  background-color: #d2691e;
+  height: 25%;
+  width: 25%;
+  margin: 15px;
+}
+
+.completeTask {
+  border: 1px solid #fffafa;
+  background-color: #d2691e;
+  height: 25%;
+  width: 25%;
+  margin: 15px;
+}
