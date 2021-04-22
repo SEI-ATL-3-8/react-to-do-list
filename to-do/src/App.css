@@ -1,0 +1,26 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+}
+
+.todosContent,
+.formContent,
+.completed {
+  margin: 0 20px;
+  width: 300px;
+  border: 1px solid grey;
+  padding: 20px;
+}
+
+.singleItem {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
