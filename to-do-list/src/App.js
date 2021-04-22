@@ -6,14 +6,19 @@ import {useState} from 'react'
 
 
 function App() {
-  // const [showList, setShowList]
+  const [newNote, setNewNote] = useState([])
+
+  const showNotes = (note) => {
+   const oneNote = [note, ...newNote]
+   setNewNote(oneNote)
+ }
 
   return (
     <div className="App">
       <h1>My To Do List</h1>
       <div className="container">
-          <Note />
-          <List />
+          <Note showNotes={showNotes}/>
+          <List newNote={newNote} setNewNote={setNewNote}/>
       </div>
     
     </div>

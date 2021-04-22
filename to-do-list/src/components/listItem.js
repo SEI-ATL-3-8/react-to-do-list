@@ -1,7 +1,7 @@
 const ListItem = (props) => {
     return (
         <div className="listItemContainer">
-            <div className="item">i'm a to do</div>
+            <div className="item" key = {props.i}>{props.note}</div>
             <button className="doneButton">done</button>
         </div>
     )

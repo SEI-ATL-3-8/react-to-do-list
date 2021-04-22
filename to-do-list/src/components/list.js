@@ -4,7 +4,12 @@ const List = (props) => {
     return (
         <div className="listContainer">
             <h1>To do's</h1>
-            <ListItem />
+            {props.newNote.map((note, i) => {
+                return (
+                  <ListItem i={i} note={note}/>   
+                )
+            })}
+           
         </div>
     )
 }

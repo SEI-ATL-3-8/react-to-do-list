@@ -13,6 +13,7 @@
   position: relative;
   margin-left: 240px;
   height: 40px;
+  margin-bottom: 30px;
 }
 
 .formContainer {
@@ -30,19 +31,20 @@ input {
 
 .item {
   border: 1px solid black;
-  height: 50px;
+  height: 45px;
   width: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
+  margin-bottom: 30px;;
 }
 
 .listContainer {
   border: 1px solid black;
   border-radius: 10px;
   width: 400px;
-  height: 200px;
+  height: 100%;
   text-align: center;
   background-color: rgb(209, 209, 209);
 }

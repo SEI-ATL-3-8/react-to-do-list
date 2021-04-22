@@ -5,7 +5,7 @@ const Note = (props) => {
     return (
         <div className="noteContainer">
             <h1>Create new note</h1>
-            <NoteForm />
+            <NoteForm showNotes={props.showNotes}/>
         </div>
     )
 }
