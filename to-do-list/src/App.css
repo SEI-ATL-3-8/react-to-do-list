@@ -1,0 +1,82 @@
+.container {
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+
+form input {
+  padding: 10px 20px;
+  display: block;
+  margin: 20px auto;
+  width: 80%;
+
+}
+
+form {
+  padding: 10px;
+  box-shadow: 2px 2px 1px 1px rgba(71, 71, 71, 0.432);
+  margin: 20px;
+  background: #fff;
+}
+
+h3 {
+  margin: unset;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.col {
+  width: 25%;
+}
+
+.btn-group {
+  display: flex;
+}
+
+.btn-group button {
+  margin-right: 20px;
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.active {
+  background: rgb(255, 245, 186);
+}
+
+.card {
+  padding: 10px;
+  box-shadow: 2px 2px 1px 1px rgba(71, 71, 71, 0.432);
+  margin: 20px;
+  background: #fff;
+  height: 200px;
+}
+
+.card p {
+  margin: unset;
+  margin-bottom: 10px;
+  font-size: 20px;
+  min-height: 70%;
+}
+
+.card button {
+  padding: 10px 20px;
+  width: 100%;
+  display: block;
+}
+
+
+.bg-green {
+  background: rgb(225, 255, 225);
+}
+
+.bg-red {
+  background: rgb(252, 207, 206);
+}
