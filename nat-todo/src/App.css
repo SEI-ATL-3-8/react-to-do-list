@@ -1,0 +1,33 @@
+
+
+.Form {
+  background-color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 25px;
+  border: 3px solid black;
+  border-radius: 3px;
+}
+
+
+.container {
+  background-color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 25px;
+  border: 3px solid black;
+  border-radius: 3px;
+}
+
+h1 {
+  font-size: larger;
+  color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.Main {
+  font-size: medium;
+  font-family: monospace;
+  color: aquamarine;
+  border-radius: 2px;
+  border-style: groove;
+}
