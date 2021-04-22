@@ -12,21 +12,17 @@ const FormInput = (props) => {
         props.addToTaskArray(task)
     }
 
+    const newTask = (e) => {
+        setTask(e.target.value)
+    }
 
     return (
         <form className="form-new" onSubmit={handleSubmit}>
-            <input className="input-text" type="text" value={task} placeholder="New task..." onChange={(e) => setTask(e.target.value)} />
+            <input className="input-text" type="text" value={task} placeholder="New task..." onChange={newTask} />
             <Buttons button={button} />
         </form>
-            
-        
 
     )
 }
-
-
-
-
-
 
 export default FormInput

@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 const Buttons = (props) => {
     return (
         <div>
@@ -9,14 +7,8 @@ const Buttons = (props) => {
             { props.button === 'Done' && 
                 <input type="submit" value="Done" className="btn-done" />
             }
-
         </div>
     )
 }
-
-
-
-
-
 
 export default Buttons

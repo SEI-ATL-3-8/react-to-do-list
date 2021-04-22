@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Headers from './Headers'
 import DoneItem from './DoneItem'
 
@@ -8,17 +7,11 @@ const DoneArea = (props) => {
     return (
         <div className="area">
             <Headers header={header} />
-            <DoneItem doneArray={props.doneArray} />
-
-
+            {props.doneArray.map((item, i) => (
+                <DoneItem key={i} entry={item} />
+            ))}
         </div>
     )
-
 }
-
-
-
-
-
 
 export default DoneArea

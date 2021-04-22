@@ -5,10 +5,12 @@ import ToDoArea from './components/ToDoArea'
 import DoneArea from './components/DoneArea'
 import Headers from './components/Headers'
 
+
 function App() {
   const header = 'Task App'
 
   const [taskArray, setTaskArray] = useState([])
+
   const [doneArray, setDoneArray] = useState([])
 
   const addToTaskArray = (item) => {
@@ -16,14 +18,13 @@ function App() {
     setTaskArray(newTask)
   }
 
-  const resolveDoneTask = (item) => {
+  const resolveDoneTask = (item, i) => {
     const newDone = [...doneArray, item]
     setDoneArray(newDone)
 
-    const removedTask = taskArray.filter(e => e !== item)
+    const removedTask = taskArray.filter((item, itemIndex) => itemIndex !== i)
     setTaskArray(removedTask)
   }
-
 
   return (
     <div className="App">

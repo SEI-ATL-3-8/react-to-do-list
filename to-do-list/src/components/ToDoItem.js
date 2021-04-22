@@ -1,15 +1,12 @@
-import { useState } from 'react'
 import Buttons from './Buttons'
 
 const ToDoItem = (props) => {
 
     const button = 'Done'
 
-    const [doneTask, setDoneTask] = useState(props.entry)
-
     const handleSubmit = (e) => {
         e.preventDefault()
-        props.resolveDoneTask(doneTask)
+        props.resolveDoneTask(props.entry, props.index)
     }
 
     return (
@@ -20,10 +17,5 @@ const ToDoItem = (props) => {
     )
     
 }
-
-
-
-
-
 
 export default ToDoItem

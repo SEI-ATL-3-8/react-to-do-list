@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Headers from './Headers'
 import ToDoItem from './ToDoItem'
 
@@ -9,16 +8,10 @@ const ToDoArea = (props) => {
         <div className="area">
             <Headers header={header} />
             {props.taskArray.map((item, i) => (
-                <ToDoItem key={i} entry={item} resolveDoneTask={props.resolveDoneTask}/>
+                <ToDoItem key={i} index={i} entry={item} resolveDoneTask={props.resolveDoneTask} />
             ))}
-           
         </div>
     )    
 }
-
-
-
-
-
 
 export default ToDoArea
