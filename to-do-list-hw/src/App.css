@@ -21,3 +21,13 @@ form{
   display: flex;
   flex-direction: column;
 }
+
+.note {
+  display: flex;
+  align-items: center;
+ 
+}
+
+.done{
+  color: red;
+}

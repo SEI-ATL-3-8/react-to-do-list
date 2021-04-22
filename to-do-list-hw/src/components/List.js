@@ -4,7 +4,7 @@ import Button from './Button'
 
 const List = (props) => {
 
-const [check, setCheck] = useState('')    
+    
 
     return(
         <div className="list">
@@ -14,11 +14,8 @@ const [check, setCheck] = useState('')
                 className="note"
                 key= {i}>
                     {item}
-                    <Button setCheck={setCheck} />
-                    {check === 'V' ?
-                        <div>{check}</div>
-                        :null
-                    }
+                    {'    '}
+                    <Button />
                 </div>
             )}
         </div>

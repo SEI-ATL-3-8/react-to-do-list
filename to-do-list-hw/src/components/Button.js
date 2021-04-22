@@ -1,13 +1,18 @@
 import { useState } from 'react'
 
-const Button = (props) => {
+const Button = () => {
 
 const [check, setCheck] = useState('V') 
 
     return(
+        <div className="done">
+        { check === 'V' ?
         <button 
-            onClick={()=> props.setCheck(check)}
+            onClick={()=> setCheck('')}
         >Done</button>
+        : "done"
+        }
+    </div>
     )
 }
 
