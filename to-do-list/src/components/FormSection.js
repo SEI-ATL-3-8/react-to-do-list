@@ -10,7 +10,7 @@ const FormSection = (props) => {
             <form>
                 <h2>Enter What You Need to Do Here:</h2>
                 <input type = 'text' name = 'toDo' placeholder = 'What do you need to do?' value = {props.toDo.value} onChange = {(e) => props.setToDo([e.target.value])} />
-                <input type = 'button' value = 'submit' onClick = {() => props.setList([props.toDo])} />
+                <input type = 'button' value = 'submit' onClick = {() => props.setList([props.toDo, ...props.list])} />
             </form>
         </div>
     )

@@ -20,3 +20,13 @@ h1 {
 .form-section {
     border: 2px solid black;
 }
+
+.item {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.doneBtn {
+    margin-left: 75px;
+}
