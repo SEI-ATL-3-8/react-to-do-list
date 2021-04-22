@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import { useState } from 'react'
 import './App.css';
+import TodoListPanel from './components/TodoListPanel';
+import FormPanel from './components/FormPanel';
 
 function App() {
+
+  const [items, setItems] = useState([])
+
+  const submitHandler = (e) => {
+    e.preventDefault()
+    const item = {
+      text: e.target.item.value,
+      done: false
+    }
+    setItems([item, ...items])
+  }
+
+  const doneHandler = (index) => {
+    const newItems = [...items]
+    newItems[index]["done"] = !newItems[index]["done"]
+    setItems(newItems)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FormPanel submitHandler={submitHandler} />
+      <TodoListPanel items={items} doneHandler={doneHandler} />
     </div>
   );
 }
