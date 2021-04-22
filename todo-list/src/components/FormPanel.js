@@ -4,7 +4,7 @@ import Form from './Form'
 const FormPanel = (props) => {
     return (
         <div className="formContainer">
-            <h1>Hello World</h1>
+            <h1 className="leftHeader">Write Task Here</h1>
             <Form toDo={props.toDo} setToDo={props.setToDo} />
         </div>
     )

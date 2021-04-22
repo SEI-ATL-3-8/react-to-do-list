@@ -7,8 +7,11 @@ const TaskList = (props) => {
       }
     return (
         <div className="allTask">
-           
-            {props.toDo}
+           <ul className="taskList">
+               <li>{props.toDo}
+               </li>
+           </ul>
+            
             
            
         </div>

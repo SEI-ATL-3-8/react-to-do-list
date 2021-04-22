@@ -2,7 +2,7 @@ import React from 'react'
 
 const SingleTask = (props) => {
     return (
-        <div className="singleTask" key={props.count}>
+        <div className={SingleTask.complete ? "strike" : ""} key={props.count}>
             {props.task}
         </div>
     )
