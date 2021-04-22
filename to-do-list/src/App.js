@@ -9,7 +9,7 @@ import DoneItems from './components/doneItems';
 function App() {
   const [toDo, setToDo] = useState('')
   const [list, setList] = useState([])
-  const [done, setDone] = useState(false)
+  const [done, setDone] = useState([])
 
   return (
     <div className="App">

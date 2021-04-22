@@ -1,8 +1,8 @@
 const ListSection = (props) => {
 
-    const markDone = () => {
-        props.setDone(true)
-    }
+    // const markDone = () => {
+    //     props.setDone(true)
+    // }
     
     return (
         <div className = 'list-section' >
@@ -11,11 +11,7 @@ const ListSection = (props) => {
                 {props.list.map((item, i) => (
                     <div className = 'item' key = {i} >
                         {[item]}
-                    {props.done ?
-                    <div>Completed</div>
-                    :
-                    <button className = 'doneBtn' key = {i} onClick = {markDone} >Done</button>
-                    }
+                    <button className = 'doneBtn' value = 'Done' name = {item} onClick = {(e) => props.setDone([e.target.name, ...props.done])} >Done</button>
                     </div>
                 ))}
 
