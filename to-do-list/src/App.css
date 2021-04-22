@@ -1,0 +1,111 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainTitle {
+  margin-bottom: 1px;
+}
+
+.mainSubHeader {
+  margin-top: 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1200px;
+}
+
+.area {
+  border: 1px solid rgb(50, 50, 50);
+  border-radius: 10px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 10px;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 380px;
+}
+
+.form-new {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-text {
+  width: 250px;
+  margin: 10px 10px;
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 5px;
+  height: 22px;
+}
+
+.task-container {
+  width: 250px;
+  border: 2px dotted rgb(19, 120, 182);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 5px 5px
+}
+
+.task-entry {
+  font-size: 0.9em;
+}
+
+.task-container-done {
+  width: 250px;
+  border: 2px solid rgb(19, 120, 182);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 5px 5px
+}
+
+.task-entry-done {
+  font-size: 0.9em;
+  text-decoration: line-through;
+}
+
+.task-container:hover, .task-container-done:hover {
+  transform: scale(1.02, 1.02);
+}
+
+.button, .btn-clear {
+  color: black;
+  border: 2px solid rgb(180, 180, 180);
+  border-radius: 5px;
+  height: 25px;
+}
+
+.button:hover, .btn-clear:hover {
+  cursor: pointer;
+  background-color: rgb(19, 120, 182);
+  border: 2px solid rgb(19, 120, 182);
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-clear {
+  margin-bottom: 10px;
+}
+
+
