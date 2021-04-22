@@ -1,7 +1,7 @@
 const ListSection = (props) => {
 
-    const markDone = {
-
+    const markDone = () => {
+        props.setDone(true)
     }
     
     return (
@@ -11,7 +11,11 @@ const ListSection = (props) => {
                 {props.list.map((item, i) => (
                     <div className = 'item' key = {i} >
                         {[item]}
-                        <button className = 'doneBtn' >Done</button>
+                    {props.done ?
+                    <div>Completed</div>
+                    :
+                    <button className = 'doneBtn' key = {i} onClick = {markDone} >Done</button>
+                    }
                     </div>
                 ))}
 
